@@ -245,7 +245,7 @@
         <div class="text-center">
             <h2 class="section-heading text-uppercase text-primary">Contact Us</h2>
         </div>
-        <form id="contactForm" data-netlify="true" method="post">
+        <form id="contactForm" data-netlify="true">
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -263,7 +263,9 @@
                     </div>
                     <div class="form-group mb-md-0">
                         <!-- Phone number input-->
-                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone"/>
+                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone"
+                               data-sb-validations="required"/>
+                        <div class="invalid-feedback" data-sb-feedback="tel:required">A phone number.</div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -296,7 +298,7 @@
             </div>
             <!-- Submit Button-->
             <div class="text-center">
-                <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send
+                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send
                     Message
                 </button>
             </div>
